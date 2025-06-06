@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>INS GHO Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.typekit.net/your-kit-id.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const wavePaths = document.querySelectorAll('.wave-path');
+    let t = 0;
+    function animateWave() {
+      t += 0.02;
+      const controlY = 30 + Math.sin(t) * 30;
+      const d = `M0,30 Q360,${controlY} 720,30 T1440,30 V60 H0 Z`;
+      wavePaths.forEach(path => path.setAttribute('d', d));
+      requestAnimationFrame(animateWave);
+    }
+    animateWave();
+  });
+  </script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#front" class="nav-link">INS GHO</a></li>
+      <li><a href="#work" class="nav-link">MeetMe</a></li>
+      <li><a href="#process" class="nav-link">Offers</a></li>
+      <li><a href="#finales" class="nav-link">Finale</a></li>
+    </ul>
+  </nav>
+  <div id="loader">
+    <div class="lotus-loader">
+      <svg viewBox="0 0 120 120">
+        <g>
+          <ellipse class="petal" cx="60" cy="40" rx="12" ry="32" fill="#ffd1e3"/>
+          <ellipse class="petal" cx="40" cy="60" rx="12" ry="32" fill="#ffb6d5" transform="rotate(-45 60 60)"/>
+          <ellipse class="petal" cx="80" cy="60" rx="12" ry="32" fill="#ffb6d5" transform="rotate(45 60 60)"/>
+          <ellipse class="petal" cx="60" cy="80" rx="12" ry="32" fill="#f5e9da" transform="rotate(90 60 60)"/>
+          <ellipse class="petal" cx="60" cy="60" rx="10" ry="18" fill="#fff"/>
+        </g>
+      </svg>
+      <p>Loading portfolio...</p>
+    </div>
+  </div>
+  <div id="main-content" style="display:none;">
+    <main>
+      <!-- FRONT PAGE -->
+      <section id="front" class="page-section front-bg">
+        <h1 class="big-caslon">INS GHO</h1>
+        <p>Logo Design • Brand Identity • Packaging • UX/UI</p>
+      </section>
+      <div class="wave-divider">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="wave-gradient" x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0%" stop-color="#f5e9da"/>
+              <stop offset="100%" stop-color="#ffd1e3"/>
+            </linearGradient>
+          </defs>
+          <path class="wave-path" d="M0,30 Q360,60 720,30 T1440,30 V60 H0 Z" fill="url(#wave-gradient)" />
+        </svg>
+      </div>
+      <!-- WORK PAGE -->
+      <section id="work" class="page-section work-bg">
+        <!-- Work content here -->
+      </section>
+      <div class="wave-divider">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="wave-gradient" x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0%" stop-color="#f5e9da"/>
+              <stop offset="100%" stop-color="#ffd1e3"/>
+            </linearGradient>
+          </defs>
+          <path class="wave-path" d="M0,30 Q360,60 720,30 T1440,30 V60 H0 Z" fill="url(#wave-gradient)" />
+        </svg>
+      </div>
+      <!-- PROCESS PAGE -->
+      <section id="process" class="page-section process-bg">
+        <!-- Process/Offers content here -->
+      </section>
+      <div class="wave-divider">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="wave-gradient" x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0%" stop-color="#f5e9da"/>
+              <stop offset="100%" stop-color="#ffd1e3"/>
+            </linearGradient>
+          </defs>
+          <path class="wave-path" d="M0,30 Q360,60 720,30 T1440,30 V60 H0 Z" fill="url(#wave-gradient)" />
+        </svg>
+      </div>
+      <!-- PACKAGING PAGE -->
+      <section id="packaging" class="page-section packaging-bg">
+        <!-- Packaging content here -->
+      </section>
+      <div class="wave-divider">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="wave-gradient" x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0%" stop-color="#f5e9da"/>
+              <stop offset="100%" stop-color="#ffd1e3"/>
+            </linearGradient>
+          </defs>
+          <path class="wave-path" d="M0,30 Q360,60 720,30 T1440,30 V60 H0 Z" fill="url(#wave-gradient)" />
+        </svg>
+      </div>
+      <!-- FONTS PAGE -->
+      <section id="fonts" class="page-section fonts-bg">
+        <!-- Fonts content here -->
+      </section>
+      <div class="wave-divider">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="wave-gradient" x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0%" stop-color="#f5e9da"/>
+              <stop offset="100%" stop-color="#ffd1e3"/>
+            </linearGradient>
+          </defs>
+          <path class="wave-path" d="M0,30 Q360,60 720,30 T1440,30 V60 H0 Z" fill="url(#wave-gradient)" />
+        </svg>
+      </div>
+      <!-- DISPLAY PAGE -->
+      <section id="display" class="page-section display-bg">
+        <!-- Display content here -->
+      </section>
+      <div class="wave-divider">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="wave-gradient" x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0%" stop-color="#f5e9da"/>
+              <stop offset="100%" stop-color="#ffd1e3"/>
+            </linearGradient>
+          </defs>
+          <path class="wave-path" d="M0,30 Q360,60 720,30 T1440,30 V60 H0 Z" fill="url(#wave-gradient)" />
+        </svg>
+      </div>
+      <!-- BRANDING PAGE -->
+      <section id="branding" class="page-section branding-bg">
+        <!-- Branding content here -->
+      </section>
+      <div class="wave-divider">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="wave-gradient" x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0%" stop-color="#f5e9da"/>
+              <stop offset="100%" stop-color="#ffd1e3"/>
+            </linearGradient>
+          </defs>
+          <path class="wave-path" d="M0,30 Q360,60 720,30 T1440,30 V60 H0 Z" fill="url(#wave-gradient)" />
+        </svg>
+      </div>
+      <!-- TALK PAGE -->
+      <section id="talk" class="page-section talk-bg">
+        <!-- Talk content here -->
+      </section>
+      <div class="wave-divider">
+        <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="wave-gradient" x1="0" x2="1" y1="0" y2="0">
+              <stop offset="0%" stop-color="#f5e9da"/>
+              <stop offset="100%" stop-color="#ffd1e3"/>
+            </linearGradient>
+          </defs>
+          <path class="wave-path" d="M0,30 Q360,60 720,30 T1440,30 V60 H0 Z" fill="url(#wave-gradient)" />
+        </svg>
+      </div>
+      <!-- FINALES PAGE -->
+      <section id="finales" class="page-section last-bg">
+        <div class="finale-icons fixed-bottom">
+          <a href="https://instagram.com/INSGHO" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram" style="font-size:2.5rem; color:#b30000;"></i>
+          </a>
+          <a href="mailto:Insghyog@rhmblom" aria-label="Email">
+            <i class="fas fa-envelope" style="font-size:2.5rem; color:#b30000;"></i>
+          </a>
+          <a href="tel:+3204593632" aria-label="Phone">
+            <i class="fas fa-phone" style="font-size:2.5rem; color:#b30000;"></i>
+          </a>
+        </div>
+      </section>
+      <footer>
+        <p>&copy; 2025 INS GHO. All rights reserved.</p>
+      </footer>
+    </main>
+  </div>
+  <!-- Modals and Bubbles (keep these outside <main>) -->
+  <!-- Curious Bubble -->
+  <div id="curious-bubble">
+    <span class="sketch-icon">
+      <svg width="38" height="38" viewBox="0 0 48 48" fill="none">
+        <path d="M24 10v16M24 26v8c0 2.2-1.8 4-4 4s-4-1.8-4-4V22m8 4h4c2.2 0 4 1.8 4 4v4c0 2.2-1.8 4-4 4s-4-1.8-4-4" stroke="#b30000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <path d="M24 8V4M16 12l-2.8-2.8M32 12l2.8-2.8" stroke="#ffb6d5" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </span>
+    <span class="click-me-text">Click Me</span>
+  </div>
+  <div id="curious-message">
+    <div class="curious-message-content">
+      <span class="close-curious">&times;</span>
+      <p>
+        You must be very curious on how it usually works:<br><br>
+        <strong>1. Discover</strong> – We chat, I learn about your goals, audience, and vibe.<br>
+        <strong>2. Design</strong> – You get bold, brand-right visuals in digital-ready formats.<br>
+        <strong>3. Deliver</strong> – I send the final files in every format you need: print, web, app, social.
+      </p>
+    </div>
+  </div>
+  <!-- Contact Modal -->
+  <div id="contact-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2 class="big-caslon">Contact</h2>
+      <form id="contact-form" autocomplete="off">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="contact-icons">
+        <a href="https://www.instagram.com/insghodesign/" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="mailto:Insghyog@rhmblom" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="tel:+3204593632" aria-label="Phone">
+          <i class="fas fa-phone"></i>
+        </a>
+      </div>
+      <p style="margin-top:1rem;">Or email: <a href="mailto:Insgho@hotmail.com">Insgho@hotmail.com</a></p>
+    </div>
+  </div>
+  <div id="contact-bubble" title="Contact me">
+    <i class="fas fa-comment-dots"></i>
+  </div>
+  <!-- Pricer Modal -->
+  <div id="pricer-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal-pricer">&times;</span>
+      <h2 class="big-caslon">INS GHO Pricer Simulation</h2>
+      <p style="margin-bottom:1.5rem;">
+        Hi there,
+        Curious about pricing? You can download my pricing simulation below to get a feel for how I value and structure my services based on your needs.<br><br>
+        <strong>Be aware:</strong> This is a guideline to help you understand how INS GHO prices projects based on key criteria—it is not a fixed quote.<br>
+        For a personalized estimate or to chat about your project in detail, don not hesitate to reach out. I would love to connect.<br>
+        <em>Dearest, INS GHO</em>
+      </p>
+      <a href="INSGHO_Pricer.xlsx" download class="pricer-download-btn">Download</a>
+    </div>
+  </div>
+  <div id="pricer-bubble" title="Download pricer simulation">
+    <i class="fas fa-coins"></i>
+  </div>
+  <!-- Portfolio Modal -->
+  <div id="portfolio-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal-portfolio">&times;</span>
+      <h2 class="big-caslon">Download PDF Portfolio</h2>
+      <p style="margin-bottom:1.5rem;">
+        Download the full INS GHO portfolio as a PDF.
+      </p>
+      <a href="Portfolio.INSGHO.ENG" download class="portfolio-download-btn">Download</a>
+    </div>
+  </div>
+  <div id="portfolio-bubble" title="Download PDF Portfolio">
+    <i class="fas fa-book"></i>
+  </div>
+  <script>
+  // Loader logic
+  window.addEventListener('load', function() {
+    const minDuration = 1800;
+    const loader = document.getElementById('loader');
+    const main = document.getElementById('main-content');
+    const start = performance.now();
+    function hideLoader() {
+      loader.style.opacity = '0';
+      setTimeout(function() {
+        loader.style.display = 'none';
+        main.style.display = '';
+      }, 700);
+    }
+    const elapsed = performance.now() - start;
+    if (elapsed < minDuration) {
+      setTimeout(hideLoader, minDuration - elapsed);
+    } else {
+      hideLoader();
+    }
+  });
+  // Fade-in and nav logic (unchanged)
+  window.addEventListener('scroll', () => {
+    const docHeight = document.body.scrollHeight - window.innerHeight;
+    const scrolled = (window.scrollY / docHeight) * 100;
+    const progress = document.getElementById('scroll-progress');
+    if (progress) progress.style.width = scrolled + '%';
+  });
+  // Curious bubble logic
+  const curiousBubble = document.getElementById('curious-bubble');
+  const curiousMessage = document.getElementById('curious-message');
+  const closeCurious = document.querySelector('.close-curious');
+  if (curiousBubble && curiousMessage && closeCurious) {
+    curiousBubble.addEventListener('click', () => {
+      curiousMessage.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    });
+    closeCurious.addEventListener('click', () => {
+      curiousMessage.style.display = 'none';
+      document.body.style.overflow = '';
+    });
+    window.addEventListener('click', (e) => {
+      if (e.target === curiousMessage) {
+        curiousMessage.style.display = 'none';
+        document.body.style.overflow = '';
+      }
+    });
+  }
+  // Smooth scroll navigation
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({behavior: 'smooth'});
+    });
+  });
+  // Highlight active nav link & fade-in sections on scroll
+  const sections = document.querySelectorAll('.page-section');
+  const navLinks = document.querySelectorAll('.nav-link');
+  function onScroll() {
+    let scrollPos = window.scrollY + window.innerHeight / 3;
+    sections.forEach((section, idx) => {
+      if (section.offsetTop < scrollPos + 100) {
+        section.classList.add('visible');
+      }
+      if (
+        section.offsetTop <= scrollPos &&
+        section.offsetTop + section.offsetHeight > scrollPos
+      ) {
+        navLinks.forEach(link => link.classList.remove('active'));
+        if (navLinks[idx]) navLinks[idx].classList.add('active');
+      }
+    });
+  }
+  window.addEventListener('scroll', onScroll);
+  window.addEventListener('DOMContentLoaded', onScroll);
+  // Contact modal logic
+  const contactBubble = document.getElementById('contact-bubble');
+  const contactModal = document.getElementById('contact-modal');
+  const closeModal = document.querySelector('.close-modal');
+  if (contactBubble && contactModal && closeModal) {
+    contactBubble.addEventListener('click', () => {
+      contactModal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    });
+    closeModal.addEventListener('click', () => {
+      contactModal.style.display = 'none';
+      document.body.style.overflow = '';
+    });
+    window.addEventListener('click', (e) => {
+      if (e.target === contactModal) {
+        contactModal.style.display = 'none';
+        document.body.style.overflow = '';
+      }
+    });
+  }
+  // Prevent form submission (demo only)
+  const contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for your message!');
+      this.reset();
+    });
+  }
+  // Pricer modal logic
+  const pricerBubble = document.getElementById('pricer-bubble');
+  const pricerModal = document.getElementById('pricer-modal');
+  const closePricer = document.querySelector('.close-modal-pricer');
+  if (pricerBubble && pricerModal && closePricer) {
+    pricerBubble.addEventListener('click', () => {
+      pricerModal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    });
+    closePricer.addEventListener('click', () => {
+      pricerModal.style.display = 'none';
+      document.body.style.overflow = '';
+    });
+    window.addEventListener('click', (e) => {
+      if (e.target === pricerModal) {
+        pricerModal.style.display = 'none';
+        document.body.style.overflow = '';
+      }
+    });
+  }
+  // Portfolio modal logic
+  const portfolioBubble = document.getElementById('portfolio-bubble');
+  const portfolioModal = document.getElementById('portfolio-modal');
+  const closePortfolio = document.querySelector('.close-modal-portfolio');
+  if (portfolioBubble && portfolioModal && closePortfolio) {
+    portfolioBubble.addEventListener('click', () => {
+      portfolioModal.style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    });
+    closePortfolio.addEventListener('click', () => {
+      portfolioModal.style.display = 'none';
+      document.body.style.overflow = '';
+    });
+    window.addEventListener('click', (e) => {
+      if (e.target === portfolioModal) {
+        portfolioModal.style.display = 'none';
+        document.body.style.overflow = '';
+      }
+    });
+  }
+  </script>
+</body>
+</html>
