@@ -1,8 +1,12 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2821
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+# INS GHO Personal Portfolio
 
-\f0\fs24 \cf0 Project }
+This portfolio website was created and designed by **Ines Ghojdam**.  
+All visual assets — including logo, illustrations, and design — are original and copyright-protected.
+
+## Technologies Used
+- HTML/CSS
+- Adobe Illustrator
+- GitHub Pages
+
+© 2025 Ines Ghojdam. All rights reserved.
+****
